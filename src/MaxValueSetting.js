@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react"
+import "./App.css"
 
 class MaxValueSetting extends React.Component {
 
@@ -13,7 +13,7 @@ class MaxValueSetting extends React.Component {
 
     render = () => {
 
-        let classForError = this.props.errorForMax ? "max error" : "max";
+        let classForError = this.props.errorForMax ? "max error" : "max"
 
         return (
             <div className={classForError}>
@@ -22,8 +22,8 @@ class MaxValueSetting extends React.Component {
                 <span> {this.props.maxValue} </span>
                 <button onClick={this.onIncreaseNum}>+</button>
             </div>
-        );
+        )
     }
 }
 
-export default MaxValueSetting;
+export default MaxValueSetting

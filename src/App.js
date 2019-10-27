@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
-import MaxValueSetting from "./MaxValueSetting";
-import StartValueSetting from "./StartValueSetting";
-import Display from "./Display";
-import DesignControl from "./DesignControl";
-
+import React from "react"
+import "./App.css"
+import MaxValueSetting from "./MaxValueSetting"
+import StartValueSetting from "./StartValueSetting"
+import Display from "./Display"
+import DesignControl from "./DesignControl"
 
 class App extends React.Component {
 
@@ -34,7 +33,7 @@ class App extends React.Component {
                 this.setState({
                     errorForMax: true
                 })
-            }else {
+            } else {
                 this.setState({
                     errorForMax: false
                 })
@@ -54,7 +53,7 @@ class App extends React.Component {
                 this.setState({
                     errorForMax: true
                 })
-            }else {
+            } else {
                 this.setState({
                     errorForMax: false
                 })
@@ -73,7 +72,7 @@ class App extends React.Component {
                 this.setState({
                     errorForStart: true
                 })
-            }else {
+            } else {
                 this.setState({
                     errorForStart: false
                 })
@@ -92,7 +91,7 @@ class App extends React.Component {
                 this.setState({
                     errorForStart: true
                 })
-            }else {
+            } else {
                 this.setState({
                     errorForStart: false
                 })
@@ -178,7 +177,7 @@ class App extends React.Component {
             "settingsWrap redBg" : (this.state.counterDesign === "Green") ?
                 "settingsWrap greenBg" : (this.state.counterDesign === "Azure") ?
                     "settingsWrap azureBg" : "settingsWrap"
-        let classForSet=this.state.setButtonDisable ? "set setButtonDisable": "set"
+        let classForSet = this.state.setButtonDisable ? "set setButtonDisable" : "set"
         return (
             <div className="AppWrap">
                 <div className="App">
@@ -213,19 +212,16 @@ class App extends React.Component {
                         />
                     </div>
                 </div>
-
                 {!this.state.isHidden && <DesignControl
                     changeDesignRed={this.changeDesignRed}
                     changeDesignGreen={this.changeDesignGreen}
                     changeDesignAzure={this.changeDesignAzure}
                     counterDesign={this.state.counterDesign}/>}
-
                 {!this.state.isHidden ? <button onClick={this.onHide}>Hide design Settings</button> :
                     <button onClick={this.onShow}>Show design Settings</button>}
             </div>
-
-        );
+        )
     }
 }
 
-export default App;
+export default App

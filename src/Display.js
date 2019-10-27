@@ -1,6 +1,5 @@
-import React from 'react';
-
-import './App.css';
+import React from "react"
+import "./App.css"
 
 
 class Display extends React.Component {
@@ -13,11 +12,10 @@ class Display extends React.Component {
         this.props.valueReset()
     }
 
-
     render = () => {
-        let classForPeak = this.props.peak ? "peak" : "";
-        let classForButtons = this.props.buttonDisable ? "setButtons buttonDisable" : "setButtons";
-        let classForInc = (this.props.maxValue === this.props.value) ? "inc setButtonDisable" : "inc";
+        let classForPeak = this.props.peak ? "peak" : ""
+        let classForButtons = this.props.buttonDisable ? "setButtons buttonDisable" : "setButtons"
+        let classForInc = (this.props.maxValue === this.props.value) ? "inc setButtonDisable" : "inc"
 
         return (
             <div>
@@ -33,8 +31,8 @@ class Display extends React.Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 
-export default Display;
+export default Display

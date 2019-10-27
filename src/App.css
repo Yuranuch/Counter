@@ -1,128 +1,146 @@
 .AppWrap {
-  text-align: center;
-
+    text-align: center;
 }
+
 .App {
-  text-align: center;
-  width: 700px;
-  margin: 150px auto 0 auto;
-  display: flex;
-  justify-content: space-around;
+    text-align: center;
+    width: 700px;
+    margin: 150px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
-.settingsWrap {
-  width: 300px;
-  height: 160px;
-  padding: 5px;
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
 
+.settingsWrap {
+    width: 300px;
+    height: 160px;
+    padding: 5px;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
 }
+
 .settings {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  padding: 5px;
-  margin-bottom: 20px;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
 }
+
 .max {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  margin: 10px;
-  background-color: white;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
 }
+
 .max.error {
-  border: 3px solid red;
+    border: 3px solid red;
 }
+
 .start {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  margin: 10px;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    margin: 10px;
 }
+
 .set {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  margin: 0 auto;
-  width: 150px;
-  background-color: white;
-  cursor: pointer;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 150px;
+    background-color: white;
+    cursor: pointer;
 }
+
 .set:active {
-  background-color: deepskyblue;
+    background-color: deepskyblue;
 }
+
 .display {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  margin: 10px;
-  height: 90px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    margin: 10px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .setButtons {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
+
 .inc {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  width: 50px;
-  background-color: white;
-  cursor: pointer;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    width: 50px;
+    background-color: white;
+    cursor: pointer;
 }
 
 .inc:active {
-  background-color: deepskyblue;
+    background-color: deepskyblue;
 }
+
 .reset {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  width: 50px;
-  background-color: white;
-  cursor: pointer;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    width: 50px;
+    background-color: white;
+    cursor: pointer;
 }
+
 .reset:active {
-  background-color: deepskyblue;
+    background-color: deepskyblue;
 }
+
 .peak {
-  color: red;
-  font-size: 30px;
+    color: red;
+    font-size: 30px;
 }
+
 .control {
-  border: 3px solid deepskyblue;
-  border-radius: 10px;
-  width: 300px;
-  background-color: white;
-  margin: 30px auto 0 auto;
+    border: 3px solid deepskyblue;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    margin: 30px auto 0 auto;
 }
+
 .redBg {
-  background-color: indianred;
-  transition-property: background-color, color;
-  transition-duration: 3s;
-  transition-delay: 0s, 1s;
-  transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+    background-color: indianred;
+    transition-property: background-color, color;
+    transition-duration: 3s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
 }
+
 .greenBg {
-  background-color: yellowgreen;
-  transition-property: background-color, color;
-  transition-duration: 3s;
-  transition-delay: 0s, 1s;
-  transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+    background-color: yellowgreen;
+    transition-property: background-color, color;
+    transition-duration: 3s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
 }
+
 .azureBg {
-  background-color: azure;
-  transition-property: background-color, color;
-  transition-duration: 3s;
-  transition-delay: 0s, 1s;
-  transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+    background-color: azure;
+    transition-property: background-color, color;
+    transition-duration: 3s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
 }
+
 .setButtonDisable {
-  background-color: deepskyblue;
-  pointer-events: none;
-  opacity: 0.5;
+    background-color: deepskyblue;
+    pointer-events: none;
+    opacity: 0.5;
 }
-.buttonDisable div{
-  background-color: deepskyblue;
-  pointer-events: none;
-  opacity: 0.5;
+
+.buttonDisable div {
+    background-color: deepskyblue;
+    pointer-events: none;
+    opacity: 0.5;
 }
 

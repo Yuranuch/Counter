@@ -1,6 +1,5 @@
-import React from 'react';
-
-import './App.css';
+import React from "react"
+import "./App.css"
 
 
 class StartValueSetting extends React.Component {
@@ -16,7 +15,7 @@ class StartValueSetting extends React.Component {
 
     render = () => {
 
-        let classForError = this.props.errorForStart ? "max error" : "max";
+        let classForError = this.props.errorForStart ? "max error" : "max"
 
         return (
             <div className={classForError}>
@@ -25,9 +24,8 @@ class StartValueSetting extends React.Component {
                 <span> {this.props.startValue} </span>
                 <button onClick={this.onIncreaseStartNum}>+</button>
             </div>
-
-        );
+        )
     }
 }
 
-export default StartValueSetting;
+export default StartValueSetting
